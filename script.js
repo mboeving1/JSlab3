@@ -47,9 +47,9 @@ function addSubmission(submissions, newName, newScore, newDate) {
   submissions.push(submission);
 }
 
-// addSubmission(submissions, "Scott", 99, "2021-01-01"); //
+addSubmission(submissions, "Scott", 99, "2021-01-01"); //
 
-// console.log(submissions);
+console.log(submissions);
 
 // Declare a function named deleteSubmissionByIndex
 // parameters: array, index
@@ -59,9 +59,9 @@ function deleteSubmissionByIndex(array, index) {
   submissions.splice(array, index);
 }
 
-//deleteSubmissionByIndex(submissions, 1); // Jane is gone.
+deleteSubmissionByIndex(submissions, 1); // Jane is gone.
 
-//console.log(submissions);
+console.log(submissions);
 
 //Declare a function named deleteSubmissionByName
 //Parameters: array, name
@@ -73,7 +73,7 @@ function deleteSubmissionByName(_array, name) {
   submissions.splice(index, 1);
 }
 
-//deleteSubmissionByName(submissions, "Joe");
+deleteSubmissionByName(submissions, "Joe");
 
 console.log(submissions);
 
@@ -151,3 +151,5 @@ function filter90AndAbove(array) {
   const pass = submissions.filter((submissions) => submissions.score >= 90);
   console.log(pass);
 }
+
+filter90AndAbove(submissions);
